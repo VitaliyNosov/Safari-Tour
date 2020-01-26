@@ -3,7 +3,13 @@
 @import "libs"
 
 ::placeholder
-	color: #666
+	color: #299fca
+
+input:-ms-input-placeholder
+  color: #299fca !important
+
+textarea:-ms-input-placeholder
+  color: #299fca !important
 
 ::selection
 	background-color: $accent
@@ -43,6 +49,924 @@ b, strong
 	font-size: 50px
 	color: $green-blue
 	font-family: colab-lig
+
+// my style
+
+li 
+	list-style: none
+
+.wrapper 
+	width: 100%
+	height: 100%
+	background: url(../img/rays.png) no-repeat
+  
+.container-fluid 
+	padding: 0px
+
+.header-menu
+	width: 100%
+	height: 140px
+	display: flex
+	justify-content: center
+
+.menu
+	width: 968px
+	height: 130px
+	background: url(../img/header-menu.png) no-repeat
+	background: cover
+
+.menu-logo
+	width: 330px
+	height: 130px
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	transform: rotate(-6deg)
+
+.logo 
+	width: 200px
+	height: 44px
+	color: #299fca
+	font-family: "aalen-bold"
+	font-size: 33px
+	font-weight: 400
+	line-height: 51.69px
+	margin-bottom: 0px
+
+.logo-podmenu 
+	width: 200px
+	height: 25px
+	overflow: hidden
+	display: flex
+	justify-content: flex-end
+	color: #299fca
+	font-family: "Arial MT"
+	font-size: 16px
+	margin-top: -50px
+
+.menu-content 
+	width: 524px
+	height: 36px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	overflow: hidden
+	color: #ffffff
+	font-family: "AG Souvenir"
+	font-size: 17px
+	font-weight: 400
+	margin-left: 320px
+	margin-top: -120px
+	ul 
+		display: flex
+		margin: 0px
+		li 
+			margin-left: 22px
+			margin-right: 22px
+			&:hover
+				cursor: pointer 
+				color: #D6E6EF
+
+
+.slider-content 
+	width: 100%
+	height: 295px
+	margin-top: 50px
+	display: flex 
+	justify-content: center
+	align-items: center
+	background: url(../img/airoplan.png) no-repeat
+	position: absolute 
+	z-index: 100
+	animation: sliderContent 4s infinite alternate
+
+@keyframes sliderContent 
+
+	0%
+		top: -10px
+		transform: rotate(-2deg)
+	100%
+		top: 10px
+		transform: rotate(2deg)
+
+
+.slider-content-block
+	max-width: 45%
+	height: 50%
+	margin-top: 4%
+
+.content-block 
+	width: 100%
+	height: 100%
+	display: block
+
+.slider-header 
+	width: 100%
+	height: 50px 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	margin-top: 18px
+	margin-left: 22px
+	color: #127ea5
+	font-family: "BIGHAU"
+	font-size: 51px
+	font-weight: 400
+
+.slider-text 
+	width: 100%
+	height: 70px
+	display: flex 
+	justify-content: center
+	margin-left: 25px
+	color: #ded90e
+	font-family: "ACooperBlackNr"
+	font-size: 25px
+	font-weight: 400
+
+.slider-buttons 
+	width: 120px
+	height: 120px
+	display: flex
+	flex-wrap: wrap 
+	align-items: flex-end 
+	margin-top: 195px
+	position: absolute 
+	z-index: 1000
+
+.button-one 
+	width: 100%
+	height: 33%
+	display: flex 
+	justify-content: flex-start
+	align-items: center
+	.one
+		width: 46px
+		height: 46px
+		display: flex 
+		justify-content: center
+		align-items: center
+		background-color: #add2e5
+		border-radius: 50%
+		border: none 
+		color: #fff
+		font-size: 40px
+		transform: rotate(50deg)
+		&:hover 
+			background-color: #fff 
+			color: #add2e5
+
+
+.button-two 
+	width: 100%
+	height: 33%
+	display: flex 
+	justify-content: flex-end
+	align-items: center
+	margin-top: -100% 
+	.two 
+		width: 42px
+		height: 42px 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		background-color: #add2e5
+		border-radius: 50%
+		color: #fff 
+		font-size: 35px 
+		&:hover 
+			background-color: #fff
+			color: #add2e5
+				
+				
+		
+.main-form-content 
+	width: 85%
+	height: 545px
+	background-color: #299fca
+	border: 5px solid #a7d1e6
+	border-radius: 25px
+	position: absolute 
+	z-index: 1
+
+.form-content-header
+	width: 100%
+	height: 10%
+	display: flex 
+	justify-content: flex-start 
+	align-items: center
+	padding-left: 20px
+	background: url(../img/online_booking.png) no-repeat
+	margin-top: 20px
+	margin-left: -20px
+	color: #ffffff
+	font-family: "AGLettericaBold"
+	font-size: 21px
+	font-weight: 400
+
+.content-form
+	width: 100%
+	display: flex 
+	justify-content: center
+	flex-wrap: wrap
+
+.block-form
+	width: 90%
+	height: 70%
+	display: flex
+	justify-content: flex-end
+
+.form 
+	width: 90%
+	display: block
+	input
+		width: 171px
+		height: 31px
+		border-radius: 5px
+		border: 3px solid #a7d1e6 
+		color: #299fca
+		font-family: "AG Foreigner Roman Medium"
+		font-size: 15px
+		font-weight: 400
+	  margin-left: 5px
+		padding-left: 5px
+	select 
+		width: 171px
+		height: 31px
+		border-radius: 5px
+		border: 3px solid #a7d1e6
+		color: #299fca
+		font-family: "AG Foreigner Roman Medium"
+		font-size: 15px
+		font-weight: 400		
+	textarea 
+		border-radius: 5px
+		border: 3px solid #a7d1e6
+		width: 171px
+		height: 57px
+		border: 3px solid #a7d1e6
+		color: #299fca
+		font-family: "AG Foreigner Roman Medium"
+		font-size: 15px
+		font-weight: 400
+		padding-left: 5px
+		resize: none
+
+.input 
+	width: 100%
+	height: 31px
+	display: flex 
+	justify-content: space-between 
+	align-items: center 
+	color: #fff
+	margin-bottom: 15px
+	
+
+///////////  my custome ui seelect /////////////
+
+.my-select-block 
+	width: 100%
+	height: 31px
+	margin-bottom: 10px
+	display: flex
+	justify-content: space-between 
+	align-items: center
+	margin-bottom: 15px
+
+.select-text 
+	color: #fff
+
+.my-select-cover-block 
+	width: 35px 
+	height: 31px
+	background-color: #a7d1e6
+	border-radius: 0px 5px 5px 0px
+	position: absolute
+	left: 80%
+
+.select 
+	width: 68%
+	height: 31px
+	position: relative
+	background-color: #fff
+	border-radius: 5px
+	.ui-button
+		background: none
+		margin: 0
+		border: none
+		padding: 0
+		height: 31px
+		border-radius: 5px
+		line-height: 25px
+		text-indent: 5px
+		color: #127EA5
+		border: 3px solid #a7d1e6
+		&:hover, 
+		&:focus
+			background: none
+			outline: none
+			color: #127EA5
+	.ui-icon
+			background-image: none		
+
+	.ui-selectmenu-text
+		font-size: 14px
+
+	.ui-selectmenu-icon.ui-icon
+		width: 0px
+		height: 0px
+		background-image: none
+		border-top: 10px solid #fff
+		border-left: 8px solid transparent
+		border-right: 8px solid transparent
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		right: 5px
+		&:hover
+			background-image: none
+
+
+	.ui-selectmenu-button-open
+		.ui-selectmenu-icon.ui-icon
+			border: none
+			border-bottom: 10px solid #fff
+			border-left: 8px solid transparent
+			border-right: 8px solid transparent
+
+////////////////////////////////////////////////
+
+.textarea 
+	width: 100%
+	height: 57px
+	display: flex 
+	justify-content: space-between 
+	align-items: flex-start
+	color: #fff
+	margin-bottom: 20px
+		
+.form-button 
+	width: 91px
+	height: 33px
+	button 
+		width: 91px
+		height: 33px
+		border-radius: 5px
+		border: none
+		font-family: Colaborate
+		background-color:  #f5ed4a
+		color: #127ea5
+		&:hover 
+			background-color: #fff 
+			cursor: pointer
+		
+
+.form-img 
+	width: 90%
+	height: auto
+	display: flex
+	justify-content: space-between
+	padding-left: 20px
+
+	
+.brighter-clouds
+	width: 100%
+	height: 378px
+	margin-top: 220px
+	background: url(../img/cloud_2.png) no-repeat
+	background-size: cover
+	position: relative
+	z-index: 0
+	animation: brighterClouds 5s infinite alternate
+
+@keyframes brighterClouds 
+
+	0%
+		top: -20px
+	100%
+		top: 20px
+
+.brighter-clouds-copy-one
+	width: 100%
+	height: 378px
+	margin-top: 220px
+	background: url(../img/cloud_3.png) no-repeat
+	background-size: cover
+	position: relative
+	z-index: 1
+	animation: brighterCloudsOne 80s infinite alternate
+
+@keyframes brighterCloudsOne 
+
+	0%
+		transform: translateX(0%)
+	100%
+		transform: translateX(-100%)
+
+.brighter-clouds-copy-two
+	width: 100%
+	height: 378px
+	margin-top: -380px
+	background: url(../img/cloud_3.png) no-repeat
+	background-size: cover
+	position: relative
+	z-index: 1
+	animation: brighterCloudsTwo 40s infinite linear
+
+@keyframes brighterCloudsTwo
+
+	0%
+		transform: translateX(0%)
+	100%
+		transform: translateX(-100%)
+		
+
+.dark-clouds 
+	width: 100%
+	height: 620px
+	background: url(../img/cloud_1.png) no-repeat
+	background-size: cover
+	margin-top: -320px
+	padding-top: 240px
+	position: absolute 
+	z-index: 10
+
+.clouds-content-left
+	width: 100%
+	height: 340px
+	margin-top: 30px
+	overflow: hidden
+
+.content-left-header 
+	width: 100%
+	height: 33px
+	display: flex 
+	justify-content: flex-start 
+	align-items: center 
+	color: #ffffff
+	font-family: "NovaNrItalic"
+	font-size: 29px
+	font-weight: 400
+
+.content-left-info 
+	width: 100% 
+	height: 64px 
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	margin-top: 20px
+
+.info-text 
+	margin-left: 20px
+
+
+.content-left-info-header 
+	color: #ffffff
+	font-family: Colaborate
+	font-size: 17px
+	font-weight: 500
+
+.content-left-info-text
+	color: #ffffff
+	font-family: "colab-lig"
+	font-size: 15px
+	font-weight: 400
+	line-height: 20px
+
+.content-left-info-praice 
+	width: 100%
+	height: 55px
+	display: flex 
+	justify-content: flex-end 
+	align-items: center
+
+.praice-money 
+	color: #ffffff
+	font-family: "AGBenguiatyrBook"
+	font-size: 27px
+	font-weight: 400
+	line-height: 52px
+	margin-right: 15px
+
+.praice-buttton 
+	button 
+		width: 91px
+		height: 33px
+		border-radius: 5px
+		border: none
+		font-family: Colaborate
+		background-color:  #f5ed4a
+		color: #127ea5
+		&:hover 
+			background-color: #fff 
+
+.block-dotted-line 
+	width: 100%
+	height: 15px
+	border-bottom: 1px dashed #ffffff
+	margin-bottom: 15px
+
+
+.clouds-content-right
+	width: 100%
+	height: 350px
+	overflow: hidden
+	// Эта запись нужна что бы сбить настройки ui стилей
+	.ui-widget-content 
+		background: none
+		border: none
+		
+			
+
+//////  tabs block   ////////////////////
+
+.tabs 
+	color: #fff
+	
+
+.header-tabs-block
+	width: 90%
+	height: 95px
+	display: flex
+	justify-content: space-between 
+	align-items: flex-end
+
+.button-block 
+	width: 50%
+	height: 100%
+	display: flex 
+	align-items: flex-end
+	ul
+		margin: 0px
+		padding: 0px
+		display: flex
+		li 
+			list-style: none		  
+
+.tours 
+	width: 100px 
+	height: 30px
+	display: flex 
+	justify-content: center
+	align-items: center
+	color: #127ea5
+	background-color: #81ffff
+	margin-right: 15px
+	border-radius: 5px 5px 0px 0px
+	&:hover
+		text-decoration: none 
+		color: #127ea5
+		background-color: #fff
+
+.photos
+	 width: 100px 
+	 height: 30px
+	 display: flex 
+	 justify-content: center
+	 align-items: center
+	 background-color: #299fca
+	 color: #81ffff
+	 margin-right: 15px
+	 border-radius: 5px 5px 0px 0px
+	 &:hover
+		 text-decoration: none 
+		 color: #299fca
+		 background-color: #fff
+
+.tabs-content-one
+	padding-top: 20px	
+
+.tabs-content-two 
+	width: 100%
+	height: 100%
+	padding-top: 20px
+	overflow: hidden
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+
+.foto-block 
+	width: 84px
+	height: 63px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	margin-bottom: 20px
+	margin-right: 15px
+	border-radius: 5px
+	border: 2px solid #fff
+	overflow: hidden
+	img 
+		width: 83px
+		height: 61px
+
+.transition
+	transition: all 0.7s ease-out
+	&:hover
+		transform: scale(1.1)
+
+.block-img 
+	width: 181px
+	height: 100%
+	background: url(../img/433_03.png)no-repeat
+
+.rigth-info-block 
+	width: 100%
+	height: 12px 
+	display: flex 
+	align-items: center
+	margin-bottom: 15px
+	color: #fff 
+	font-size: 16px 
+	font-family: "colab-lig"
+	font-weight: 400 
+	line-height: 27px 
+
+.rigth-info-block-icon 
+	width: 12px
+	height: 12px
+	border-radius: 50%
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	font-size: 10px 
+	color: #127EA5
+	background-color: #81FFFF
+
+.rigth-info-block-text 
+	margin-left: 10px
+
+.rigth-info-block-number 
+	margin-left: 55px
+
+.rigth-info-block-details 
+	margin-left: 62px
+
+//////////////////////////////////////
+
+
+.map-content 
+	width: 100%
+	height: 600px
+	margin-top: 300px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	flex-wrap: wrap
+
+.map-info 
+	width: 100%
+	height: 60px 
+	display: flex 
+	justify-content: center
+	flex-wrap: wrap
+
+.map-header 
+	width: 100%
+	display: flex
+	justify-content: center
+	color: #4690b4
+	font-size: 27px
+	margin-top: 20px
+	font-family: "AGLettericaBold"
+
+.map-text 
+	width: 100%
+	display: flex
+	justify-content: center
+	color: #4690b4
+	font-size: 17px
+
+.map 
+	width: 75%
+	height: 75%
+	background: url(../img/map.png)no-repeat
+	display: flex 
+	justify-content: flex-start
+	align-items: center
+	margin-top: 30px
+	margin-bottom: 50px
+
+.map-two
+	width: 186px
+	height: 207px
+	position: absolute
+	left: 43.5%
+	top: 67%
+	&:hover 
+		cursor: pointer
+
+.map-block
+	width: 355px
+	height: 275px
+	display: flex 
+	justify-content: flex-start
+	align-items: flex-start
+	flex-wrap: wrap
+	margin-left: 150px
+	background: url(../img/info_bg.png)no-repeat
+	z-index: 100
+
+.map-blocks
+	width: 100%
+	height: 320px
+	margin-top: 10px
+
+.map-block-content 
+	width: 65%
+	height: 70%
+	margin-left: 4%
+	padding: 5px
+	overflow: auto
+	overflow-x: hidden
+
+.map-block-footer
+	width: 65%
+	height: 40px
+	display: flex 
+	justify-content: center
+	align-items: center
+	margin-left: 4%
+	color: #b2aaaa
+	font-family: Colaborate
+	font-size: 23px
+	font-weight: 400
+
+.map-cart 
+	width: 100%
+	height: 63px
+	display: flex
+	align-items: center
+	margin-bottom: 20px
+
+.cart-img
+	
+.header-cart-text
+	color: #a4a4a4
+	font-family: Colaborate
+	font-size: 17px
+	font-weight: 500
+
+.cart-text
+	color: #a4a4a4
+	font-family: "Colaborate - Thin"
+	margin-left: 5px
+	font-size: 14px
+	font-weight: 400
+	line-height: 17px
+	
+
+.footer
+	width: 100%
+	height: 330px
+	display: flex 
+	justify-content: space-between 
+	align-items: flex-start
+	padding-top: 20px
+	background-color:  #127ea5
+
+.footer-contact-form 
+	width: 100% 
+	height: 100% 
+
+.cocial-info 
+	width: 100% 
+	text-shadow: 1px 1px 0 rgba(15, 111, 146, 0.75)
+	color: #ffffff
+	font-size: 25px
+	font-family: "colab-reg"
+
+.cocial-form 
+	width: 100%
+	display: flex
+	justify-content: space-between
+	padding-right: 10%
+
+.cocial-media-info
+	text-shadow: 1px 1px 0 rgba(15, 111, 146, 0.75)
+	color: #ffffff
+	font-size: 25px
+	font-family: "colab-reg"
+
+.icons 
+	width: 100%
+	height: 60px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+.icon 
+	width: 29px
+	height: 22px
+	display: flex 
+	justify-content: center
+	align-items: center
+	padding: 20px
+	border-radius: 50%
+	margin-right: 20px
+	background-color: #78c3ea
+	color: #fff
+	opacity: 0.49
+	z-index: 1
+	&:hover 
+		opacity: 0.69
+
+.footer-contact-text
+	width: 100%
+	margin-top: 10px
+
+.contact-info 
+	color: #fff 
+	font-size: 25px 
+	text-shadow: 1px 1px 0 rgba(15, 111, 146, 0.75)
+	font-family: "colab-reg"
+
+.contact-text 
+	color: #ffffff
+	font-family: "colab-lig"
+	font-size: 14px
+	font-weight: 400
+	line-height: 27px
+
+.form-info 
+	color: #fff 
+	font-size: 25px 
+	text-shadow: 1px 1px 0 rgba(15, 111, 146, 0.75)
+	font-family: "colab-reg"
+.body-input 
+	width: 194px
+	height: 32px
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	background: url(../img/Layer_38.png) no-repeat
+	overflow: hidden
+	margin-top: 10px
+	input
+		width: 100%
+		height: 32px
+		background: none
+		border: none
+		border-radius: 5px
+		color: #fff
+		padding-left: 10px
+		font-size: 14px
+
+.body-text-area 
+	width: 285px 
+	height: 58px 
+	display: flex 
+	justify-content: flex-start 
+	align-items: flex-start
+	background: url(../img/Layer_39png) no-repeat
+	margin-top: 10px 
+	overflow: hidden
+	textarea
+		width: 100%
+		background: none
+		border: none 
+		color: #fff
+		padding-left: 10px
+		padding-top: 10px
+		font-size: 14px
+		resize: none
+
+.form-button-two
+	width: 100%
+	display: flex 
+	justify-content: flex-end
+	padding-right: 10%
+	margin-top: 10px 
+	button 
+		width: 91px
+		height: 33px
+		border-radius: 5px
+		border: none
+		font-family: Colaborate
+		background-color:  #D6E6EF
+		color: #1380a7
+		&:hover 
+			background-color: #fff
+
+.footer-info 
+	width: 100%
+	height: 30px
+	display: flex 
+	justify-content: center
+	color: #fff 
+	font-size: 12px
+	font-family: "colab-lig"
+
+
+
+
+
+
+
+	
+
+
 	
 	
 
