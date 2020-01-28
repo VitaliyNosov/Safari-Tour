@@ -1,5 +1,6 @@
 $(function() {
 
+
 // slider one
 
 	var carusel1 = $('.owl-carousel');
@@ -57,15 +58,6 @@ $(function() {
 
 	// custome scrollbar
 
-	$(function () {
-		//The passed argument has to be at least a empty object or a object with your desired options
-		// $("body").overlayScrollbars({
-		// 	sizeAutoCapable: false,
-		// 	resize: "vertical"
-			
-		// });
-
-		// custome scrollbar 2
 		$('.map-block-content').overlayScrollbars({
 			sizeAutoCapable: false,
 			resize: "vertical"
@@ -73,11 +65,17 @@ $(function() {
 
 		});
 
-	});
+	// popup
 
-	
+		$(".item").magnificPopup({
+			type: 'image',
+			gallery: {
+				enabled: true
+			}
+		});
 
-	
 	
 
 });
+
+
