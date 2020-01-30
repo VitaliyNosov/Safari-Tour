@@ -1,5 +1,16 @@
 $(function() {
 
+// menu mobile 
+
+	$('.menu-icon').click(function () {
+		$('.menu-content').slideToggle(500);
+	});
+	$(window).resize(function () {
+		if ($(window).width() > 500) {
+			$('.menu-content').removeAttr('style');
+		}
+	});
+
 
 // slider one
 
