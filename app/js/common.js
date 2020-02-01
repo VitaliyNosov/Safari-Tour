@@ -67,7 +67,7 @@ $(function() {
 		}
 	});
 
-// mobil version
+// mobile version
 
 	var gools = 0;
 

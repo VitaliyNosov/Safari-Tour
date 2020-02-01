@@ -617,8 +617,9 @@ THEMES:
 }
 .os-theme-dark > .os-scrollbar-vertical .os-scrollbar-handle:before,
 .os-theme-light > .os-scrollbar-vertical .os-scrollbar-handle:before {
-    left: -6px;
+    /* left: -6px; */
     right: -2px;
+
 }
 .os-host-rtl.os-theme-dark > .os-scrollbar-vertical .os-scrollbar-handle:before,
 .os-host-rtl.os-theme-light > .os-scrollbar-vertical .os-scrollbar-handle:before {
