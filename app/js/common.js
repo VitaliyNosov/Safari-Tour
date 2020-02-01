@@ -67,6 +67,21 @@ $(function() {
 		}
 	});
 
+// mobil version
+
+	var gools = 0;
+
+	$('#map-twos').on('click', function () {
+		if (gools == 0) {
+			$('#block-info').fadeIn();
+			gools = 1;
+		}
+		else {
+			$('#block-info').fadeOut();
+			gools = 0;
+		}
+	});
+
 	// custome scrollbar
 
 		$('.map-block-content').overlayScrollbars({
