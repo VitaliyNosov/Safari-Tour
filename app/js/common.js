@@ -100,6 +100,15 @@ $(function() {
 			}
 		});
 
+	// preloader
+
+		// $(window).load(function () {
+		// 	setTimeout(function () {
+		// 		$('#preloader').fadeOut('slow', function () { });
+		// 	}, 2000);
+
+		// });
+
 	
 
 });
