@@ -17,8 +17,8 @@ $(function() {
 	var carusel1 = $('.owl-carousel');
 	carusel1.owlCarousel({
 		items: 1,
-		dots: true,
-		autoplay: true
+		dots: true
+		// autoplay: true
 
 	});
 	// Go to the next item
