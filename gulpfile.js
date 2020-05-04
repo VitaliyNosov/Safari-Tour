@@ -45,6 +45,13 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/overlayScrollbars/jquery.overlayScrollbars.min.js',
+		'app/libs/jquery ui/jquery-ui.min.js',
+		'app/libs/owl.carousel/owl.carousel.min.js',
+		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
+		'app/libs/promise-polifill@8/promise-polifill@8.js',
+		'app/libs/preloader/preloader.js',
+		'app/libs/fontawesom-5/fontawesome.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
